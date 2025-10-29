@@ -246,3 +246,55 @@ footer h4 {
     padding: 20px 10px;
   }
 }
+
+.occasions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.occasions .auto {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.occasions .auto img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.occasions .auto h3 {
+  margin: 15px 0 10px;
+}
+
+.occasions .auto p {
+  color: #555;
+}
+
+.occasions .auto .button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #f0c040;
+  color: #222;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.occasions .auto .button:hover {
+  background: #d4a10f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .occasions {
+    grid-template-columns: 1fr;
+  }
+}
